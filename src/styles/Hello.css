@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%; /* Ensure the body takes up the full viewport */
+  margin: 0; /* Remove default margin */
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  /* align-items: center; Vertically center */
+  background: rgb(9, 60, 200);
+  background-image: url('../assets/star-trek.jpg'); /* Referencing image from public folder */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  display: flex;
+  color: rgb(9, 60, 200);
+  justify-content: center;
+}
+
+.app-container {
+  margin-top: 20px;
+  border: 1px solid rgb(23, 23, 23);
+  background-color: rgb(255, 255, 44);
+  background: linear-gradient(to bottom, #f6fa07, #ececec);
+  width: 400px;
+  height: 400px;
+}
