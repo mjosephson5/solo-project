@@ -28,4 +28,32 @@ h1 {
   background: linear-gradient(to bottom, #f6fa07, #ececec);
   width: 400px;
   height: 400px;
+  text-align: center;
+}
+
+ul {
+  color: rgb(9, 60, 200);
+}
+
+li {
+  display: flex;
+  color: rgb(9, 60, 200);
+  margin: 5px 0;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 40px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 13px;
+  background-color: #3f9bd4;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
