@@ -37,6 +37,8 @@ ul {
 
 li {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: rgb(9, 60, 200);
   margin: 5px 0;
 }
@@ -50,10 +52,21 @@ input {
   width: 300px;
 }
 
-button {
+.add-button {
   padding: 10px 13px;
   background-color: #3f9bd4;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.delete-button {
+  padding: 10px 5px;
+  margin-right: 20px;
+  background-color: #3f9bd4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
 }
