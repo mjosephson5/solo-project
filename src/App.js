@@ -23,6 +23,12 @@ const App = () => {
       setTask(''); //clear the input field after adding the task
     }
   };
+  //filter to create new array based on condition
+  //cb as an arg, if cb returns true, element included in new array, otherwise element excluded
+  const handleDeleteTask = (itemToDeleteAtIndex) => {
+    //setTasks updates the tasks state to new array
+    setTasks(tasks.filter((task, index) => index !== itemToDeleteAtIndex));
+  };
 
   return (
     <div className='app-container'>
@@ -36,13 +42,23 @@ const App = () => {
           onChange={handleInputChange} //react attr that handles input or form changes, it fires an event whenever the value of the input changes
           placeholder="What's on the docket for today, Captain?"
         />
-        <button type='submit'>Add to list</button>
+        <button type='submit' className='add-button'>
+          Add to list
+        </button>
       </form>
 
       {/* display tasks - tasks is array of to-do items, maps over and for each task in task array it creates list item*/}
       <ul>
         {tasks.map((tasks, index) => (
-          <li key={index}>{tasks}</li>
+          <li key={index}>
+            {tasks}
+            <button
+              onClick={() => handleDeleteTask(index)}
+              className='delete-button'
+            >
+              Delete
+            </button>
+          </li>
         ))}
       </ul>
     </div>
